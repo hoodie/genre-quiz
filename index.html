@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Genre Quiz</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <link rel="stylesheet" href="lib/reveal.css">
+    <link rel="stylesheet" href="theme/hoodie-solarized.css">
+    <link rel="stylesheet" href="theme/black.css">
+    <link rel="stylesheet" href="theme/fonts/fonts.css">
+	<link rel="stylesheet" href="theme/font-awesome/all.min.css">
+	<style>
+		ul.answers>li {list-style-type: upper-alpha;}
+	</style>
+</head>
+
+<body>
+
+    <div class="reveal">
+        <div class="slides">
+
+			<section>
+				<section>Music Genre Quiz</section>
+				<section>
+					<ul>
+						<li>Listen!</li>
+						<li>A, B, or C?</li>
+						<li>Reveal!</li>
+					</ul>
+				</section>
+				<section id="price">
+					<ul>
+						<li class="fragment"><strong>P</strong>rice</li>
+						<li class="fragment"><strong>T</strong>o</li>
+						<li class="fragment"><strong>O</strong>ffer</li>
+					</ul>
+					<h1 class="fragment">1 day PTO</h1>
+
+				</section>
+			</section>
+
+			<section>
+				<span> Round 1 </span>
+
+				<section id="round1">
+					<h4>Warm up</h4>
+				</section>
+
+				<section>
+					<aside class="notes">
+						KoRn
+						NuMetal
+					</aside>
+					<code>korn</code>
+					<ul class="answers">
+						<li><span class="fragment" data-fragment-index="1" >New Metal</span></li>
+						<li><span class="fragment" data-fragment-index="2" > Nu Metal</span> <span class="fragment" data-fragment-index="4" >✔️</span> </li>
+						<li><span class="fragment" data-fragment-index="3" >Noo Metal</span></li>
+					</ul>
+				</section>
+
+				<section>
+					<aside class="notes">
+						Nirvana
+						Grunge
+					</aside>
+					<code>nirvana</code>
+					<ul class="answers">
+						<li><span class="fragment">Punk</span></li>
+						<li><span class="fragment">Grunge</span></li>
+						<li><span class="fragment">PostPunk</span></li>
+					</ul>
+				</section>
+
+				<section>
+					<aside class="notes">
+						Red Hot Chili Peppers - Funky Monks
+						Funk Rock
+					</aside>
+					<code>red hot chili peppers</code>
+					<ul class="answers">
+						<li><span class="fragment">Punk</span></li>
+						<li><span class="fragment">Grunge</span></li>
+						<li><span class="fragment">PostPunk</span></li>
+					</ul>
+				</section>
+			</section>
+
+			<section>
+				<span> Round 2 </span>
+
+				<section id="round2">
+					<h4>Nerdy</h4>
+				</section>
+
+				<section id="BabyMetal">
+					<aside class="notes">
+						KawaiiMetal
+					</aside>
+
+					<div class="svelte-video"
+						data-time="0"
+						data-src="./videos/BABYMETAL  - HEADBANGER  LIVE AT BUDOKAN  BLACK NIGHT 2014 Full HD-I2vuKOmd1js.mp4"
+					></div>
+
+
+					<ul class="answers">
+						<li><span class="fragment">KawaiiMetal</span></li>
+						<li><span class="fragment">JPOPCore</span></li>
+						<li><span class="fragment">BabyMetal</span></li>
+					</ul>
+				</section>
+
+				<section>
+					<aside class="notes">
+						Nintendocore
+						Mario killed Pikachu 'Cry in Sorrow'
+					</aside>
+					<div class="svelte-video"
+						data-time="3"
+						data-src="./videos/Mario killed Pikachu 'Cry in Sorrow'-j9XTEcZ-BUU.mp4"
+					></div>
+					<ul class="answers">
+						<li><span class="fragment">AtariCore</span></li>
+						<li><span class="fragment">NintendoCore</span></li>
+						<li><span class="fragment">SegaMetal</span></li>
+					</ul>
+				</section>
+
+				<section>
+					<aside class="notes">
+						ATC / Aqua??
+						BubbleGumDance
+					</aside>
+
+					<ul class="answers">
+						<li><span class="fragment">EuroDance</span></li>
+						<li><span class="fragment">HappyDance</span></li>
+						<li><span class="fragment">BubbleGumDance</span></li>
+					</ul>
+				</section>
+
+				<section>
+					<aside class="notes">
+						Parov Stella
+						Electro Swing
+					</aside>
+					<ul class="answers">
+						<li><span class="fragment">CoolJazz</span></li>
+						<li><span class="fragment">SwingPop</span></li>
+						<li><span class="fragment">Electro Swing</span></li>
+					</ul>
+				</section>
+			</section>
+
+			<section>
+				<span>Round 3</span>
+				<section id="round3">
+					<h4>Weird</h4>
+				</section>
+			</section>
+
+			<section>
+				<span>Round 4</span>
+				<section id="round4">
+					<h4>Seriously though?!</h4>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h2>TODO</h2>
+					acid jazz
+					la brasbanda
+					lowercase
+					chiptune
+					Pirate Metal
+					Neue Musik (4:33)
+					Dangermusic
+					splittercore ("Crazy Beauties" Diabarha) /extratone/speedcore
+					Japan Noise
+					https://www.youtube.com/watch?v=r2P0H5a797Y
+				</section>
+
+			</section>
+		</div>
+    </div>
+
+    <script src="lib/reveal.js"></script>
+	<script src="./videoplayer/public/bundle.js"></script>
+
+    <script>
+		const elements = document.querySelectorAll(".svelte-video");
+		elements.forEach(element=> {
+			console.debug(element.dataset);
+			new SvelteVideoplayer({
+				target: element,
+				props:  {
+					src: element.getAttribute('data-src'),
+					startTime: element.getAttribute('data-time'),
+				},
+			})
+		})
+	</script>
+
+    <script>
+
+		Reveal.initialize({
+            history: true,
+            slideNumber: true,
+			dependencies: [
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/notes/notes.js', async: true },
+				{ src: 'plugin/highlight/highlight.js', async: true }
+			]
+		});
+
+    </script>
+
+</body>
+
+</html>
