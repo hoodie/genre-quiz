@@ -11,8 +11,17 @@
     <link rel="stylesheet" href="theme/black.css">
     <link rel="stylesheet" href="theme/fonts/fonts.css">
 	<link rel="stylesheet" href="theme/font-awesome/all.min.css">
+	<link rel="stylesheet" href="theme/talk.css">
+	<link rel="stylesheet" href="./videoplayer/public/bundle.css">
 	<style>
 		ul.answers>li {list-style-type: upper-alpha;}
+		.svelte-video {
+			width: 70%;
+			align-content: center;
+			margin-left: auto;
+			margin-right: auto;
+			font-size: 0.9em;;
+		}
 	</style>
 </head>
 
@@ -22,15 +31,16 @@
         <div class="slides">
 
 			<section id="intro">
-				<section>Music Genre Quiz</section>
 				<section>
-					<ul>
-						<li>Listen!</li>
-						<li>A, B, or C?</li>
-						<li>Reveal!</li>
-					</ul>
+					<h2 class="fragment">welcome</h2>
+					<h2 class="fragment">to</h2>
+					<h1 class="fragment">the</h1>
+					<h1 class="fragment neon">
+						Music Genre Quiz 2019
+					</h1>
 				</section>
 				<section id="price">
+					<h1>price</h1>
 					<ul>
 						<li class="fragment"><strong>P</strong>rice</li>
 						<li class="fragment"><strong>T</strong>o</li>
@@ -39,27 +49,64 @@
 					<h1 class="fragment">1 day PTO</h1>
 
 				</section>
+				<section id="rules">
+					<h2>Rules</h2>
+					<ol>
+						<li class="fragment">Listen!</li>
+						<li class="fragment">A, B, C or D?</li>
+						<li class="fragment">Reveal!</li>
+					</ol>
+				</section>
 			</section>
 
 			<section>
-				<span> Round 1 </span>
-
-				<section id="round1">
-					<h4>Warm up</h4>
+				<section id="round0">
+					<h4>Round 0</h4>
 				</section>
 
 				<section>
-					<aside class="notes">
-						Red Hot Chili Peppers - Funky Monks
-						Funk Rock
-					</aside>
+					<center>
+					<div class="svelte-video"
+						data-time="5"
+					    data-src="./videos/Sex Pistols - God Save The Queen-yqrAPOZxgzU.mp4"
+					></div>
+					</center>
+					<ul class="answers">
+						<li><span class="fragment" data-fragment-index="1">Singer Songwriter</span>
+						</li>
+						<li><span class="fragment" data-fragment-index="2">Punk</span>
+							<span class="fragment" data-fragment-index="5">✅</span>
+						</li>
+						<li><span class="fragment" data-fragment-index="3">Hip Hop</span></li>
+						<li><span class="fragment" data-fragment-index="4">Deutscher Schlager</span></li>
+					</ul>
+					<p class="fragment" data-fragment-index="5">Sex Pistols - "God Save The Queen"</p>
+				</section>
+			</section>
+
+			<section>
+				<span class="chapter"> Round 1 </span>
+
+				<section id="round1">
+					<h1>Round 1</h1>
+					<h2 class="fragment">Warm up</h2>
+				</section>
+
+				<section>
+
+					<center>
+					<div class="svelte-video"
+						data-time="4"
+					    data-src="./videos/Red Hot Chili Peppers - Give It Away [Official Music Video]-Mr_uHJPUlO8.mp4"
+					></div>
+					</center>
 					<ul class="answers">
 						<li><span class="fragment" data-fragment-index="1">Funk Rock</span>
 							<span class="fragment" data-fragment-index="5">✅</span>
 						</li>
 						<li><span class="fragment" data-fragment-index="2">Radio Transmitter Pop</span></li>
 						<li><span class="fragment" data-fragment-index="3">Chili Jazz</span></li>
-						<li><span class="fragment" data-fragment-index="4">Naked Post Punk</span></li>
+						<li><span class="fragment" data-fragment-index="4">Naked Silver Punk</span></li>
 					</ul>
 					<p class="fragment" data-fragment-index="5">Red Hot Chili Peppers - "Give It Away"</p>
 				</section>
@@ -68,8 +115,13 @@
 					<aside class="notes">
 						Edwin Hawkins - Oh Happy DAy
 					</aside>
-					<video src="./videos/'Oh Happy Day' Edwin Hawkins - Anthony Brown w_ FBCG Combined Choir-olQrCfkvbGw.mp4"></video>
-					1:55
+					<center>
+					<div class="svelte-video"
+						data-time="55"
+					    data-src="./videos/'Oh Happy Day' Edwin Hawkins - Anthony Brown w_ FBCG Combined Choir-olQrCfkvbGw.mp4"
+					></div>
+					</center>
+
 					<ul class="answers">
 						<li><span class="fragment" data-fragment-index="1">Churchel</span>
 						</li>
@@ -77,7 +129,7 @@
 						<li><span class="fragment" data-fragment-index="3">Gospel</span>
 							<span class="fragment" data-fragment-index="5">✅</span>
 						</li>
-						<li><span class="fragment" data-fragment-index="4">God Music</span></li>
+						<li><span class="fragment" data-fragment-index="4">Pray Music</span></li>
 					</ul>
 					<p class="fragment" data-fragment-index="5">
 						Edwin Hawkins - "Oh Happy Day"
@@ -88,8 +140,12 @@
 					<aside class="notes">
 						Nirvana - Grunge
 					</aside>
-					<video src="./videos/Nirvana - Smells Like Teen Spirit (Live At The Paramount, Seattle _ 1991)-zucJHYwi2Uc.mp4"></video>
-					2:05
+					<center>
+					<div class="svelte-video"
+						data-time="125"
+					    data-src="./videos/Nirvana - Smells Like Teen Spirit (Live At The Paramount, Seattle _ 1991)-zucJHYwi2Uc.mp4"
+					></div>
+					</center>
 					<ul class="answers">
 						<li><span class="fragment" data-fragment-index="1">Dirt</span> </li>
 						<li><span class="fragment" data-fragment-index="2">Grunge
@@ -105,7 +161,13 @@
 					<aside class="notes">
 						2pac feat Easy E, Ice Cube - "real thugs"
 					</aside>
-					<video src="./videos/Eazy E feat. 2pac & Ice cube - real thugs-Q06BRRAx3p0.mp4"></video>
+					<center>
+					<div class="svelte-video"
+						data-time="125"
+					    data-src="./videos/Eazy E feat. 2pac & Ice cube - real thugs-Q06BRRAx3p0.mp4"
+					></div>
+					</center>
+					<small>
 					<ul class="answers">
 						<li><span class="fragment" data-fragment-index="1">Mobster Funk</span></li>
 						<li><span class="fragment" data-fragment-index="2">Gangster Rap
@@ -113,16 +175,19 @@
 						</span></li>
 						<li><span class="fragment" data-fragment-index="3">Jail Hop</span></li>
 						<li><span class="fragment" data-fragment-index="4">Killer Pop</span></li>
-					</ul>
-					<p class="fragment" data-fragment-index="5"></p>
+					</ul></small>
+					<p class="fragment" data-fragment-index="5">
+						2pac feat Easy E, Ice Cube - "real thugs"
+					</p>
 				</section>
 
 			</section>
 
 			<section>
-
+				<span class="chapter"> Round 2 </span>
 				<section id="round2">
-					<h2>Kinda Special</h2>
+					<h1>Round 2</h1>
+					<h2 class="fragment">Kinda Special</h2>
 				</section>
 
 				<section>
@@ -130,8 +195,12 @@
 						Jerry Reed
 						Country Truck Driving Music
 					</aside>
-					<video src="./videos/Jerry Reed - East Bound And Down-8QAEmCuBnck.mp4"></video>
-					0:00
+					<center>
+					<div class="svelte-video"
+						data-time="0"
+					    data-src="./videos/Jerry Reed - East Bound And Down-8QAEmCuBnck.mp4"
+					></div>
+					</center>
 					<ul class="answers">
 						<li><span class="fragment" data-fragment-index="1">Highway Blues</span>
 						</li>
@@ -150,8 +219,12 @@
 					<aside class="notes">
 						Rammstein - FEuer FRei
 					</aside>
-					<video src="./videos/Rammstein - Feuer Frei! (Official Video)-ZkW-K5RQdzo.mp4"></video>
-					2:20
+					<center>
+					<div class="svelte-video"
+						data-time="140"
+						data-src="./videos/Rammstein - Feuer Frei! (Official Video)-ZkW-K5RQdzo.mp4"
+					></div>
+					</center>
 					<ul class="answers">
 						<li><span class="fragment" data-fragment-index="1">Altmetall</span></li>
 						<li><span class="fragment" data-fragment-index="2">Industrielle Marschmusik</span></li>
@@ -168,40 +241,43 @@
 					<aside class="notes">
 						Parov Stella - Electro Swing
 					</aside>
-					<video src="./videos/Parov Stelar - Booty Swing-Eco4z98nIQY.mp4"></video>
-					0:00
+					<center>
+					<div class="svelte-video"
+						data-time="0"
+						data-src="./videos/Parov Stelar - Booty Swing-Eco4z98nIQY.mp4"
+					></div>
+					</center>
+					<small>
 					<ul class="answers">
-						<li><span class="fragment" data-fragment-index="1"></span>
+						<li><span class="fragment" data-fragment-index="1">
 							Electro Swing
+						</span>
 							<span class="fragment" data-fragment-index="5">✅</span>
 						</li>
 						<li><span class="fragment" data-fragment-index="2">Synthie Woogie</span></li>
 						<li><span class="fragment" data-fragment-index="3">Modern Ragtime</span></li>
 						<li><span class="fragment" data-fragment-index="4">Dance Jazz</span></li>
-					</ul>
+					</ul></small>
 					<p class="fragment" data-fragment-index="5">Parov Stella - "Booty Swing"</p>
+				</section>
 
 				<section>
 					<aside class="notes">
 						Misfits - Dig Up Her Bones
 					</aside>
-					<video src="./videos/Misfits - Dig Up Her Bones (Official Video)-lgSLz5FeXUg.mp4"></video>
-					0:00
+					<center>
+					<div class="svelte-video"
+						data-time="0"
+						data-src="./videos/Misfits - Dig Up Her Bones (Official Video)-lgSLz5FeXUg.mp4"
+					></div>
+					</center>
+					<small>
 					<ul class="answers">
-						<li><span class="fragment" data-fragment-index="1"></span>
-							Graveyard Rock
-						</li>
-						<li><span class="fragment" data-fragment-index="2">
-							Werwolfcore
-						</span></li>
-						<li><span class="fragment" data-fragment-index="3">
-							Horror Punk
-							<span class="fragment" data-fragment-index="5">✅</span>
-						</span></li>
-						<li><span class="fragment" data-fragment-index="4">
-							Zombie Metal
-						</span></li>
-					</ul>
+						<li><span class="fragment" data-fragment-index="1"> Graveyard Rock </span> </li>
+						<li><span class="fragment" data-fragment-index="2"> Werwolfcore </span></li>
+						<li><span class="fragment" data-fragment-index="3"> Horror Punk </span> <span class="fragment" data-fragment-index="5">✅</span> </li>
+						<li><span class="fragment" data-fragment-index="4"> Zombie Metal </span></li>
+					</ul></small>
 					<p class="fragment" data-fragment-index="5">
 							Misfits - "Dig Up Her Bones"
 					</p>
@@ -209,21 +285,26 @@
 
 
 
-		</section>
+			</section>
 
 			<section>
-				<span> Round 3 </span>
+				<span class="chapter"> Round 3 </span>
 
 				<section id="round3">
-					<h4>Nerdy</h4>
+					<h1>Round 3</h1>
+					<h2 class="fragment">Nerdy</h2>
 				</section>
 
 				<section>
 					<aside class="notes">
 						Aqua - Barbie Girl
 					</aside>
-					<video src="./videos/Aqua - Barbie Girl (Official Video)-ZyhrYis509A.mp4"></video>
-					0:10
+					<center>
+					<div class="svelte-video"
+						data-time="10"
+						data-src="./videos/Aqua - Barbie Girl (Official Video)-ZyhrYis509A.mp4"
+					></div>
+					</center>
 					<ul class="answers">
 						<li><span class="fragment" data-fragment-index="1"> Barbie Techno </span> </li>
 						<li><span class="fragment" data-fragment-index="2"> BubbleGumDance
@@ -243,8 +324,13 @@
 					<aside class="notes">
 						Sister Irene O'Conner - Fire
 					</aside>
-					<video src="./videos/Sister Irene O'Connor - Fire-tEOXg92gwl4.mp4"></video>
-					0:58
+					<center>
+					<div class="svelte-video"
+						data-time="58"
+					    data-src="./videos/Sister Irene O'Connor - Fire-tEOXg92gwl4.mp4"
+					></div>
+					</center>
+					<small>
 					<ul class="answers">
 						<li><span class="fragment" data-fragment-index="1">Pray'n'Penance</span></li>
 						<li><span class="fragment" data-fragment-index="2">Female Christian Guitar Pop</span></li>
@@ -252,7 +338,7 @@
 							<span class="fragment" data-fragment-index="5">✅</span>
 						</span></li>
 						<li><span class="fragment" data-fragment-index="4">Nuncore</span></li>
-					</ul>
+					</ul></small>
 					<p class="fragment" data-fragment-index="5">
 						Sister Irene O'Conner - "Fire"
 					</p>
@@ -264,13 +350,14 @@
 						On'nanoko
 					</aside>
 
-					<!--
+					<center>
 					<div class="svelte-video"
 						data-time="0"
 						data-src="./videos/BABYMETAL  - HEADBANGER  LIVE AT BUDOKAN  BLACK NIGHT 2014 Full HD-I2vuKOmd1js.mp4"
 					></div>
-					-->
+					</center>
 
+					<small>
 					<ul class="answers">
 						<li><span class="fragment" data-fragment-index="1">KawaiiMetal
 							<span class="fragment" data-fragment-index="5">✅</span>
@@ -279,33 +366,21 @@
 						<li><span class="fragment" data-fragment-index="3">女の子 Metal</span></li>
 						<li><span class="fragment" data-fragment-index="4">HappyMetal</span></li>
 					</ul>
+					</small>
 				</section>
-
-
-				<section>
-					<aside class="notes">
-					</aside>
-					<video src=""></video>
-					0:00
-					<ul class="answers">
-						<li><span class="fragment" data-fragment-index="1"></span>
-							<span class="fragment" data-fragment-index="5">✅</span>
-						</li>
-						<li><span class="fragment" data-fragment-index="2"></span></li>
-						<li><span class="fragment" data-fragment-index="3"></span></li>
-						<li><span class="fragment" data-fragment-index="4"></span></li>
-					</ul>
-					<p class="fragment" data-fragment-index="5"></p>
-				</section>
-
 
 
 				<section>
 					<aside class="notes">
 						LaBrassbanda - Autobahn
 					</aside>
-					<video src="./videos/LaBrassBanda - Autobahn (Offizielles Musik Video) (Live - 10 Jahre LaBrassBanda)-aPq8m4KQjFM.mp4"></video>
-					1:30
+					<center>
+					<div class="svelte-video"
+						data-time="80"
+						data-src="./videos/LaBrassBanda - Autobahn (Offizielles Musik Video) (Live - 10 Jahre LaBrassBanda)-aPq8m4KQjFM.mp4"
+					></div>
+					</center>
+
 					<ul class="answers">
 						<li><span class="fragment" data-fragment-index="1">Lederhosen Punk</span></li>
 						<li><span class="fragment" data-fragment-index="2">Cow Fart Rock</span></li>
@@ -327,14 +402,13 @@
 						Nintendocore
 						Horse the Band - "Bunnies"
 					</aside>
-					<!--
+					<center>
 					<div class="svelte-video"
-						data-time="3"
-						data-src="./videos/Mario killed Pikachu 'Cry in Sorrow'-j9XTEcZ-BUU.mp4"
+						data-time="0"
+						data-src="./videos/HORSE the band 'Bunnies'-xVWjdP1oL44.mp4"
 					></div>
-					-->
-					<video src="./videos/HORSE the band 'Bunnies'-xVWjdP1oL44.mp4"></video>
-					0:00
+					</center>
+					<small>
 					<ul class="answers">
 						<li><span class="fragment" data-fragment-index="1">WiiMusic</span></li>
 						<li><span class="fragment" data-fragment-index="2">AtariCore</span></li>
@@ -343,6 +417,7 @@
 							 </span></li>
 						<li><span class="fragment" data-fragment-index="4">SegaMetal</span></li>
 					</ul>
+					</small>
 					<p class="fragment" data-fragment-index="5">
 						Horse the Band - "Bunnies"
 					</p>
@@ -351,17 +426,22 @@
 			</section>
 
 			<section>
-				<span>Round 4</span>
+				<span class="chapter"> Round 4 </span>
 				<section id="round4">
-					<h4>Weird</h4>
+					<h1>Round 4</h1>
+					<h2 class="fragment">Weird</h2>
 				</section>
 
 				<section>
 					<aside class="notes">
 						Spasm - Beautiful Human Toilet
 					</aside>
-					<video src="./videos/Spasm - Beautiful Human Toilet--i-pAtZrkAg.mp4"></video>
-					0:07
+					<center>
+					<div class="svelte-video"
+						data-time="7"
+						data-src="./videos/Spasm - Beautiful Human Toilet--i-pAtZrkAg.mp4"
+					></div>
+					</center>
 					<ul class="answers">
 						<li><span class="fragment" data-fragment-index="1">PornGrind
 							<span class="fragment" data-fragment-index="5">✅</span>
@@ -379,8 +459,12 @@
 					<aside class="notes">
 						John Cage - 26 minutes, one point, 1499 seconds for a string player
 					</aside>
-					<video src="./videos/AVANT GARDE MUSIC  - SOUND-pq0a317mk30.mp4"></video>
-					0:04
+					<center>
+					<div class="svelte-video"
+						data-time="3"
+						data-src="./videos/AVANT GARDE MUSIC  - SOUND-pq0a317mk30.mp4"
+					></div>
+					</center>
 					<ul class="answers">
 						<li><span class="fragment" data-fragment-index="1">Improcore</span></li>
 						<li><span class="fragment" data-fragment-index="2">Avant Garde</span>
@@ -398,8 +482,12 @@
 					<aside class="notes">
 						Cytotoxin - Survival Matrix
 					</aside>
-					<video src="./videos/Cytotoxin - Survival Matrix (Tribute Clip)-euAW1Jd9cbY.mp4"></video>
-					0:10
+					<center>
+					<div class="svelte-video"
+						data-time="10"
+						data-src="./videos/Cytotoxin - Survival Matrix (Tribute Clip)-euAW1Jd9cbY.mp4"
+					></div>
+					</center>
 					<ul class="answers">
 						<li><span class="fragment" data-fragment-index="1">Radiophobic Darkrock</span></li>
 						<li><span class="fragment" data-fragment-index="2">Plutoniumcore</span></li>
@@ -413,28 +501,11 @@
 					</p>
 				</section>
 
-				<section>
-					<aside class="notes">
-
-					</aside>
-					<video src=""></video>
-					0:00
-					<ul class="answers">
-						<li><span class="fragment" data-fragment-index="1"></span></li>
-						<li><span class="fragment" data-fragment-index="2"></span></li>
-						<li><span class="fragment" data-fragment-index="3">
-							<span class="fragment" data-fragment-index="5">✅</span>
-							 </span></li>
-						<li><span class="fragment" data-fragment-index="4"></span></li>
-					</ul>
-					<p class="fragment" data-fragment-index="5">
-					</p>
-				</section>
 
 			</section>
 
 			<section>
-				<span>Round 5</span>
+				<span class="chapter"> Round 5 </span>
 				<section id="round5">
 					<h4>Seriously though?!</h4>
 				</section>

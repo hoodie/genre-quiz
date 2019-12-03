@@ -125,11 +125,11 @@ pre code {
 }
 
 .flickering {
-  animation: flicker 3.5s infinite alternate;     
+  animation: flicker 3.5s infinite alternate;
 }
 
 .flickering2 {
-  animation: flicker 2.5s infinite backwards;     
+  animation: flicker 2.5s infinite backwards;
 }
 
 /* thanks to https://codepen.io/KevinOgden/pen/JEwjBB/ */
@@ -159,12 +159,12 @@ pre code {
             0 0 calc(var(--neon-border-size) * 4rem) var(--neon-text-color),
             0 0 calc(var(--neon-border-size) * 6rem) var(--neon-text-color),
             0 0 calc(var(--neon-border-size) * 8rem) var(--neon-text-color),
-            0 0 calc(var(--neon-border-size) * 10rem) var(--neon-text-color);
-}  
+            0 0 calc(var(--neon-border-size) * 10rem) var(--neon-text-color) !important;
+}
 
 @keyframes flicker {
     0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
-      
+
         opacity: inherit;
         text-shadow:
             -0.2rem -0.2rem 1rem #fff,
@@ -174,23 +174,23 @@ pre code {
             0 0 calc(var(--neon-border-size) * 6rem) var(--neon-text-color),
             0 0 calc(var(--neon-border-size) * 8rem) var(--neon-text-color),
             0 0 calc(var(--neon-border-size) * 10rem) var(--neon-text-color);
-   
+
     }
-    
-    20%, 24%, 55% {        
+
+    20%, 24%, 55% {
         opacity: 0;
         text-shadow: none;
         box-shadow: none;
-    }    
+    }
 }
 
-@keyframes startglow {
-    0% {        
+@keyframes  {
+    0% {
         opacity: 0;
         text-shadow: none;
         box-shadow: none;
-    }    
-    
+    }
+
      100% {
         opacity: inherit;
         text-shadow:
@@ -201,7 +201,7 @@ pre code {
             0 0 calc(var(--neon-border-size) * 6rem) var(--neon-text-color),
             0 0 calc(var(--neon-border-size) * 8rem) var(--neon-text-color),
             0 0 calc(var(--neon-border-size) * 10rem) var(--neon-text-color);
-   
+
     }
 }
 
@@ -288,7 +288,7 @@ pre code {
    24.5% { transform: translate3d(0px,-00px, 0) rotate(9deg);   }
    25%   { transform: translate3d(0px,-70px, 0) rotate(9deg);   }
    25.5% { transform: translate3d(0px, 0px, 0) rotate(0deg);   }
-   
+
    /*
    20% { transform: translate3d(    0px, 0px, 0) rotate(0deg);   }
    30% { transform: translate3d( -240px, 0px, 0) rotate(0deg);   }
@@ -339,7 +339,7 @@ pre code {
 .blinking {
     display: inline-block;
     margin-left: 1px;
-  
+
     animation: blink 2s linear 0s infinite;
 }
 
